@@ -1,0 +1,71 @@
+﻿Get a notification when an artist is touring in madison wi, milwaukee, or chicago
+
+
+Could also do a visualization project where I breakdown the music scene in each major city, based on venue, artists, ticket price, etc
+
+
+Integrate with apple music so any artist I have downloaded would automatically be on the list
+
+
+—----------------------------------------------------------------------------------------------------------------------------
+
+
+Concert Notification System — Project Overview & Goal
+1. Purpose
+This project builds a personal system that monitors upcoming concerts for artists you care about and alerts you whenever a new show appears in locations you specify. It is designed to run on a schedule (daily by default, though configurable) and operates fully through the Ticketmaster Discovery API.
+2. Core Idea
+You maintain a dynamic list of artists—manually provided or programmatically extracted from Apple Music. The system checks Ticketmaster for each artist and filters results by target cities or a configurable mile radius. When a qualifying event is detected, you receive a notification by email or phone.
+3. High-Level Flow
+1. Collect artist list
+
+   * Manually entered artists
+
+   * Or scraped from Apple Music sources (favorites, playlists, most-played)
+
+      2. Query Ticketmaster Discovery API
+
+         * Search by artist name or attraction ID
+
+         * Retrieve event data from Ticketmaster, Universe, FrontGate, and TMR
+
+            3. Filter events
+
+               * Geographic constraints: Madison, Chicago, Milwaukee, or radius-based filtering
+
+                  4. Detect new events
+
+                     * Compare results with previously stored event IDs
+
+                        5. Send notifications
+
+                           * Email or SMS when a new event appears
+
+                              6. Scheduled execution
+
+                                 * Runs once per day (configurable)
+
+4. Project Goals
+                                    * Provide automatic daily detection of concerts for relevant artists
+
+                                    * Support flexible artist sourcing, including Apple Music scraping
+
+                                    * Allow user-defined geographic constraints for concert discovery
+
+                                    * Deliver timely notifications with minimal manual intervention
+
+                                    * Maintain a stable history of seen events to avoid duplicate alerts
+
+5. Future Directions
+                                       * Concert history model: automatically infer which concerts you’ve already attended
+
+                                       * Mobile companion app: unified interface for artist tracking, notifications, and scheduling
+
+                                       * Expanded ticket sources: integrate multiple ticketing services beyond Ticketmaster
+
+                                       * Recommendation layer: predict which concerts you would be most interested in or likely to attend based on listening behavior
+
+                                       * Social features: identify when friends are attending the same events
+                                       * Expanding radius for top artists: When it's an artist you heavily listen to expand the concert radius because you would be more likely to travel for top artists.
+                                       * Separating out smaller and larger artists: The concert experience is different when you are supporting the lesser known underground music scene.
+6. Intended Use
+This document provides context for any discussion, prompt, or code generation related to the project. It outlines the operational goals, workflow, and future aspirations, forming a foundation for implementation, architectural design, or planning sessions.
