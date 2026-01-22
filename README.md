@@ -34,6 +34,12 @@ A personal backend system that monitors upcoming concerts for your favorite arti
 
 ---
 
+## Skills Learned
+
+This project demonstrates proficiency in **API Security & Secrets Management** through secure API key handling using environment variables (never hardcoded, loaded only when needed), **API Integration** with RESTful endpoints, pagination, and error handling, **Data Structures & Organization** using complex nested dictionaries and event filtering, **Geospatial Computing** with distance calculations, and **Python Best Practices** including modular functions, docstrings, and clean code organization.
+
+---
+
 ## Artist Metadata Structure
 
 Each artist is stored in a dictionary keyed by artist name. Example structure:
